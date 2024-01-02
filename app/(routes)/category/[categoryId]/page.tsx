@@ -4,6 +4,7 @@ import getProducts from "@/actions/get-products";
 import getSizes from "@/actions/get-sizes";
 import Billboard from "@/components/billboard";
 import Container from "@/components/ui/container";
+import Filter from "./components/filter";
 
 export const revalidate = 0;
 
@@ -40,8 +41,8 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
         <div className="px-4 sm:px-6 lg:px-8 pb-24">
           <div className="lg:grid lg:grid-cols-5 lg:gap-x-8">
             {/* Add mobile filters */}
-            <div className="hidden lg:block">
-              {/* <Filter valuekey="sizeId" name="sizes" data={sizes}"></Filter> */}
+            <div className="hidden md:block">
+              <Filter valuekey="sizeId" name="sizes" data={sizes} />
             </div>
           </div>
         </div>

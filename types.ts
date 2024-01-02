@@ -5,6 +5,7 @@ export interface BillBoard {
 }
 
 export interface Category {
+  billboard: BillBoard;
   id: string;
   name: string;
   billboards: BillBoard;

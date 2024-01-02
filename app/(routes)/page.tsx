@@ -7,10 +7,10 @@ import Container from "@/components/ui/container";
 export const revalidate = 0;
 const HomePage = async () => {
   // Featured Products data from getProducts action function
-  const peoduts = await getProducts({ isFeatured: true });
+  const product = await getProducts({ isFeatured: true });
 
   // Single Billboard data
-  const billboard = await getBillboard("be0f2b6d-3600-4ef3-816d-7d0d3b00dd11");
+  const billboard = await getBillboard("e7d5b8d5-3f0a-40a4-94cc-0d9eef45b322");
   return (
     <>
       <Container>
@@ -18,7 +18,7 @@ const HomePage = async () => {
           <Billboard data={billboard} />
         </div>
         <div className="flex flex-col gapy-8 sm:px-6 lg:px-8">
-          <ProductList title="Featured Products" items={peoduts} />
+          <ProductList title="Featured Products" items={product} />
         </div>
       </Container>
     </>
