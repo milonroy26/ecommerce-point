@@ -10,7 +10,7 @@ const HomePage = async () => {
   const product = await getProducts({ isFeatured: true });
 
   // Single Billboard data
-  const billboard = await getBillboard("e7d5b8d5-3f0a-40a4-94cc-0d9eef45b322");
+  const billboard = await getBillboard("be0f2b6d-3600-4ef3-816d-7d0d3b00dd11");
   return (
     <>
       <Container>
