@@ -3,6 +3,7 @@ import Container from "./ui/container";
 import MainNav from "./main-nav";
 import getCategories from "@/actions/get-categories";
 import NavbarActions from "./navbar-actions";
+import { ThemeToggle } from "./ui/theme-toggle";
 
 export const revalidate = 0;
 
@@ -17,6 +18,8 @@ const Navbar = async () => {
           </Link>
           {/* main nav list */}
           <MainNav data={categories} />
+          {/* theme toggle */}
+          <ThemeToggle />
           {/* actions */}
           <NavbarActions />
         </div>

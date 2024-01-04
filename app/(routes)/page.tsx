@@ -10,14 +10,14 @@ const HomePage = async () => {
   const product = await getProducts({ isFeatured: true });
 
   // Single Billboard data
-  const billboard = await getBillboard("e7d5b8d5-3f0a-40a4-94cc-0d9eef45b322");
+  const billboard = await getBillboard("be0f2b6d-3600-4ef3-816d-7d0d3b00dd11");
   return (
     <>
       <Container>
         <div className="space-y-10 pb-10">
           <Billboard data={billboard} />
         </div>
-        <div className="flex flex-col gapy-8 sm:px-6 lg:px-8">
+        <div className="flex flex-col gapy-8 sm:px-6 lg:px-8 pb-8">
           <ProductList title="Featured Products" items={product} />
         </div>
       </Container>
